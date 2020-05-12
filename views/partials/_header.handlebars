@@ -1,16 +1,17 @@
 <nav class="grey darken-3">
     <div class="container">
         <div class="nav-wrapper">
-            <a href="/stories" class="brand-logo center">StoryBooks</a>
+            <a href="/" class="brand-logo center">StoryBooks</a>
             <a href="#" data-activates="main-menu" class="button-collapse show-on-large"><i class="fa fa-bars"></i></a>
-
+    
             <!-- RIGHT NAV -->
-            <ul class="right hide-on-small-only">
+            <ul class="right hide-on-small-only hide-on-large-only">
                 {{#if user}}
                     <li><a href="/dashboard">Welcome</a></li>
                     <li><a href="/auth/logout"><i class="fa fa-sign-out"></i> Logout</a></li>
                 {{else}}
                     <li><a href="/stories"><i class="fa fa-book"></i> Public Stories</a></li>
+                    <li><a href="/stories/add"><i class="fa fa-plus"></i> Add Stories</a></li>
                  {{/if}}
             </ul>
 
